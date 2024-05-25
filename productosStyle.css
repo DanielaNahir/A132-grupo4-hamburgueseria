@@ -1,6 +1,15 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: #E9D331;
+    font-family: "Bebas Neue";
 }
+
+/*encabezado y barra de navegacion*/
 
 .logo{
 
@@ -31,11 +40,29 @@ body{
     grid-template-columns: repeat(5, auto);
     width: 60%;
     position: relative;
-    left: 430px;
-    top: 65px;
+    left: 450px;
+    top: 70px;
+    
+}
+
+.navegacion a{
+    margin-left: 100px;
+    text-decoration: none;
     font-size: 1.5rem;
     color: aliceblue;
 }
+
+.navegacion a:hover{
+    color: #E9D331;
+}
+
+.navegacion a.active{
+    color: #E9D331;
+}
+
+/**************************************************/
+
+/*body*/
 
 .tituloProductos{
     margin-left: 50px;
@@ -45,8 +72,15 @@ body{
 .burger{
     width: 350px;
     height: 310px;
-    margin: 200px 50px;
+    margin: 150px 50px;
     border-radius: 200px;
+    border-color: #DF5700;
+    border-width: 7px;
+    border-style:solid groove;
+}
+
+.burger:nth-child(2n-1){
+    border-color:  #FF8A00;
 }
 .productos{
     position: absolute;
@@ -58,7 +92,47 @@ body{
     justify-content: center;
 
 }
+/*************************/
 
+/*botones*/
+.btn{
+    position: relative;
+    top: 350px;
+    left: -20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    background-color:#DF5700;
+    padding: 10px 40px;
+    width: 150px;
+    border-radius: 100px;
+    border-style: solid groove;
+    border-color:#DF5700;
+    margin: 0px 110px 560px;
+    text-align: center;
+    
+}
+
+.btn a:nth-child(2n-1){
+    border-color:  #FF8A00;;
+    background-color: #FF8A00;;
+}
+
+.btn a.doblePanceta{
+    font-size: 1.5rem;
+}
+
+
+
+
+/****************************/
 @media screen and (max-width: 1200px) {
     .burger{
         width: 250px;
