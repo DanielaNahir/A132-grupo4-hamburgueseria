@@ -2,31 +2,85 @@ body{
     background-color: #E9D331;
 }
 
-.logo-img{
+.logo{
 
     width: 140px;
     height: 140px;
     position: relative;
-    top: -17px;
+    top: -5px;
+}
+
+.logoEscrito{
+    position: relative;
+    top: -25px;
 }
 
 .barraNavegacion{
     background-image: url("img/cuadritos.png");
     /*background-size: cover;*/
     height: 160px;
-    width: 1500px;
+    width: 101.3%;
     position: relative;
     top: -10px;
     left: -10px;
+    align-content: center;
 }
 .navegacion{
     display: grid;
     align-content: center;
     grid-template-columns: repeat(5, auto);
-    width: 80%;
+    width: 60%;
     position: relative;
-    left: 210px;
+    left: 430px;
     top: 65px;
     font-size: 1.5rem;
     color: aliceblue;
+}
+
+.tituloProductos{
+    margin-left: 50px;
+    font-size: 2.5rem;
+}
+
+.burger{
+    width: 350px;
+    height: 310px;
+    margin: 200px 50px;
+    border-radius: 200px;
+}
+.productos{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .burger{
+        width: 250px;
+        height: 210px;
+        margin: 200px 30px;
+        border-radius: 100px;
+    }
+
+    .navegacion{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .productos{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .productos{
+        grid-template-columns: repeat(1, auto);
+    }
 }
