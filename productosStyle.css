@@ -1,0 +1,32 @@
+body{
+    background-color: #E9D331;
+}
+
+.logo-img{
+
+    width: 140px;
+    height: 140px;
+    position: relative;
+    top: -17px;
+}
+
+.barraNavegacion{
+    background-image: url("img/cuadritos.png");
+    /*background-size: cover;*/
+    height: 160px;
+    width: 1500px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+.navegacion{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(5, auto);
+    width: 80%;
+    position: relative;
+    left: 210px;
+    top: 65px;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
