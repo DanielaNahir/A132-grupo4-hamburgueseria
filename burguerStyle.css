@@ -94,6 +94,14 @@ body{
     left: 40%;
 }
 
+#tituloPanceta{
+    left: 27%;
+}
+
+#tituloCheddarBoom{
+    left: 34%;
+}
+
 /*************/
 
 /*texto*/
@@ -106,8 +114,9 @@ body{
 }
 /****************/
 
-/*boton carrito*/
+/*botones*/
 .btn a{
+
     text-decoration: none;
     color: black;
     font-size: 2rem;
@@ -119,6 +128,7 @@ body{
     border-color:#e47f0d;
 }
 
+/*boton carrito*/
 .btnCarrito{
     position: relative;
     left: 200px;
@@ -126,15 +136,56 @@ body{
 
 /*otros productos*/
 
+.otrosProductos{
+    position: relative;
+    top: -100px;
+}
+
 .subtitulo{
     position: relative;
+    width: 90%;
     left: 50px;
     top: -150px;
     font-size: 2rem;
 }
 
+hr{
+    position: relative;
+    top: -50px;
+    width: 95%;
+    height: 3px;
+    background-color: antiquewhite;
+    border-style: ridge;
+}
+
 .imagenes img{
-    width: 350px;
-    height: 300px;
+    position: relative;
+    top: -100px;
+    width: 240px;
+    height: 190px;
     border-radius: 300px;
+    margin: 7px;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+}
+
+#btnBurguers{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+}
+
+#btnBurguers a:first-child{
+    font-size: 1.53rem;
+}
+
+#btnBurguers a{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    margin: 10px;
 }
