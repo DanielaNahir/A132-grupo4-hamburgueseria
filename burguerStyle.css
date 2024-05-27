@@ -66,6 +66,9 @@ body{
 
 .burguer{
     position: relative;
+    
+    width: 570px;
+    height: 420px;
     top: 100px;
     left: 100px;
     border-radius: 150px;
