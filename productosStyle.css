@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -7,16 +9,22 @@
 body{
     background-color: #E9D331;
     font-family: "Bebas Neue";
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /*encabezado y barra de navegacion*/
 
 .logo{
-
+    position: relative;
+    top: -5px;
     width: 140px;
     height: 140px;
     position: relative;
-    top: -5px;
 }
 
 .logoEscrito{
@@ -28,10 +36,9 @@ body{
     background-image: url("img/cuadritos.png");
     /*background-size: cover;*/
     height: 160px;
-    width: 101.3%;
+    width: 100%;
     position: relative;
     top: -10px;
-    left: -10px;
     align-content: center;
 }
 .navegacion{
@@ -47,7 +54,6 @@ body{
 
 .navegacion a{
     margin-left: 100px;
-    text-decoration: none;
     font-size: 1.5rem;
     color: aliceblue;
 }
@@ -72,7 +78,7 @@ body{
 .burger{
     width: 350px;
     height: 310px;
-    margin: 150px 50px;
+    margin: 100px 50px;
     border-radius: 200px;
     border-color: #DF5700;
     border-width: 7px;
@@ -84,7 +90,7 @@ body{
 }
 .productos{
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 0px;
     width: 100%;
     display: grid;
@@ -97,7 +103,7 @@ body{
 /*botones*/
 .btn{
     position: relative;
-    top: 350px;
+    top: 360px;
     left: -20px;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -106,7 +112,6 @@ body{
 
 
 .btn a{
-    text-decoration: none;
     color: black;
     font-size: 2rem;
     background-color:#DF5700;
@@ -115,7 +120,7 @@ body{
     border-radius: 100px;
     border-style: solid groove;
     border-color:#DF5700;
-    margin: 0px 111px 560px;
+    margin: 0px 111px 450px;
     text-align: center;
     
 }
@@ -128,8 +133,6 @@ body{
 .btn a.doblePanceta{
     font-size: 1.5rem;
 }
-
-
 
 
 /****************************/

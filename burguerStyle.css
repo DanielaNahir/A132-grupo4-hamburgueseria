@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -7,16 +9,22 @@
 body{
     background-color: #E9D331;
     font-family: "Bebas Neue";
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /*encabezado y barra de navegacion*/
 
 .logo{
-
+    position: relative;
+    top: -5px;
     width: 140px;
     height: 140px;
     position: relative;
-    top: -5px;
 }
 
 .logoEscrito{
@@ -28,10 +36,9 @@ body{
     background-image: url("img/cuadritos.png");
     /*background-size: cover;*/
     height: 160px;
-    width: 101.3%;
+    width: 100%;
     position: relative;
     top: -10px;
-    left: -10px;
     align-content: center;
 }
 .navegacion{
@@ -47,9 +54,7 @@ body{
 
 .navegacion a{
     margin-left: 100px;
-    text-decoration: none;
     font-size: 1.5rem;
-    color: aliceblue;
 }
 
 .navegacion a:hover{
@@ -116,8 +121,6 @@ body{
 
 /*botones*/
 .btn a{
-
-    text-decoration: none;
     color: black;
     font-size: 2rem;
     background-color: #FF8A00;
@@ -189,3 +192,5 @@ hr{
     text-align: center;
     margin: 10px;
 }
+
+/******************/
