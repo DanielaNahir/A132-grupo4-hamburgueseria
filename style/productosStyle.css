@@ -48,6 +48,21 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s;
+    text-align: center;
+}
+
+.back h1{
+    position: relative;
+    top: 20px;
+}
+
+.back h2{
+    font-size: 4rem;
+}
+
+.back a{
+    position: relative;
+    font-size: 2rem;
 }
 
 .contenedor:hover img {
@@ -60,17 +75,6 @@
 
 /**************/
 
-
-
-#betoss, #doblePanceta, #H1706{
-    border-color:  #FF8A00;
-    background-color: #FF8A00;
-}
-.productos{
-    width: 100%;
-    align-items: center;
-}
-/*************************/
 
 /*botones*/
 .arriba{
@@ -88,6 +92,7 @@
 }
 
 .btn a{
+    display: block;
     color: black;
     font-size: 2rem;
     background-color:#DF5700;
@@ -100,11 +105,6 @@
     text-align: center;
 }
 
-.btn a:nth-child(2n-1){
-    border-color:  #FF8A00;;
-    background-color: #FF8A00;;
-}
-
 .btn a.doblePanceta{
     font-size: 1.5rem;
 }
@@ -113,17 +113,47 @@
     height: 200px;
 }
 
+#betoss, #doblePanceta, #H1706{
+    border-color:  #FF8A00;
+    background-color: #FF8A00;
+}
 /****************************/
 @media screen and (max-width: 1200px) {
     .burger{
-        width: 250px;
-        height: 210px;
+        width: 290px;
+        height: 250px;
         margin: 0px 40px;
-        border-radius: 100px;
+        border-radius: 120px;
+    }
+
+    .back{
+        width: 290px;
+        height: 250px;
+        margin: 0px 40px;
+        border-radius: 120px;
+    }
+
+    .back h2{
+        position: relative;
+        top: 10px;
+        font-size: 2.5rem;
+    }
+
+    .back a{
+        position: relative;
+        top: 30px;
     }
 
     .btn a{
-        margin: 0px 75px;
+        margin: 0px 80px;
+    }
+
+    .btn a.doblePanceta{
+        font-size: 1.3rem;
+    }
+
+    .btn a.cheddarBoom{
+        font-size: 1.6rem;
     }
 
     .navegacion{
@@ -132,14 +162,82 @@
     
 }
 
-@media screen and (max-width: 900px){
-    .productos{
-        grid-template-columns: repeat(2, auto);
+@media screen and (max-width: 1100px) {
+    .burger{
+        width: 290px;
+        height: 250px;
+        margin: 0px 20px;
+        border-radius: 120px;
     }
+
+    .back{
+        width: 290px;
+        height: 250px;
+        margin: 0px 20px;
+        border-radius: 120px;
+    }
+
+    .back h2{
+        position: relative;
+        top: 10px;
+        font-size: 2.5rem;
+    }
+
+    .back a{
+        position: relative;
+        top: 30px;
+    }
+
+    .btn a{
+        margin: 0px 70px;
+    }
+
+    .btn a.doblePanceta{
+        font-size: 1.3rem;
+    }
+
+    .btn a.cheddarBoom{
+        font-size: 1.6rem;
+    }
+
+    .navegacion{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 1050px){
+    .burger{
+        margin: 0px 10px;
+    }
+
+    .back{
+        margin: 0px 10px;
+    }
+
+    .back h2{
+        position: relative;
+        top: 10px;
+        font-size: 2.5rem;
+    }
+
+    .back a{
+        position: relative;
+        top: 30px;
+    }
+
+    .btn a{
+        margin: 0px 60px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    a{
+        background-color: #DF5700;
+    }
+    
 }
 
 @media screen and (max-width: 600px){
-    .productos{
-        grid-template-columns: repeat(1, auto);
-    }
 }

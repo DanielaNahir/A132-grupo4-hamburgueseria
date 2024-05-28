@@ -10,70 +10,97 @@
 </head>
 <body>
     <header>
-        <nav class="barraNavegacion">
-            <div class="navegacion">
-            <a href="" >HOME</a>
-            <a href="" >LOCALES</a>
-            <a href="productos.html" class="active">PRODUCTOS</a>
-            <a href="" >CARRITO</a>
-            <a href="" >CONTACTOS</a>
+        <a href="#" class="logo">
+            <img class="logo-img" src="img/logo.png" alt="logo de la compañia">
+            <div class="container-burger1706">
+                <h2>burger</h2>
+                <h4>1706</h4>
             </div>
-            <a href="#" class="logo">
-                <img class="logo" src="img/logo.png" alt="burguer1706">
-                <img class="logoEscrito" src="img/logo-escrito.png" alt="burguer1706">
-            </a>
+        </a>
+        <nav>
+            <a href="#inicio" class="nav-link">HOME</a>
+            <a href="" class="nav-link">LOCALES</a>
+            <a href="" class="active">PRODUCTOS</a>
+            <a href="" class="nav-link">CARRITO</a>
+            <a href="#contactos" class="nav-link">CONTACTOS</a>
         </nav>
     </header>
 
-    <div>
+    <div class="espaciado"></div>
+
+    <section class="productos">
         <h2 class="tituloProductos">Todos nuestros productos</h2>
-        <div class="productos">
-            <div class="prodArriba">
-                <div class="contenedor">
-                    <img class= "burger" src="img/argenta.png" alt="argenta" id="argenta">
-                    <div class="back"></div>
-                </div>
-                <div class="contenedor">
-                    <img class= "burger" src="img/betoss.jpg" alt="betoss" id="betoss">
-                    <div class="back" id="betoss"></div>
-                </div>
-                <div class="contenedor">
-                    <img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom" id="cheddarBoom">
-                    <div class="back"></div>
+        <div class="prodArriba">
+            <div class="contenedor" id="argenta">
+                <img class= "burger" src="img/argenta.png" alt="argenta" id="argenta">
+                <div class="back" id="argenta">
+                    <h1>argenta</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="argenta.html">info</a>
                 </div>
             </div>
-            <div class="btn">
-                <div class="arriba">
-                    
-                    <a href="argenta.html" class="argenta" class="arriba">ARGENTA</a>
-                    <a href="betoss.html" class="betoss" class="arriba" id="betoss">BETOS'S</a>
-                    <a href="cheddarBoom.html" class="cheddarBoom" class="arriba">CHEDDAR BOOM</a>
+            <div class="contenedor">
+                <img class= "burger" src="img/betoss.jpg" alt="betoss" id="betoss">
+                <div class="back" id="betoss">
+                    <h1>betos's</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="betoss.html">info</a>
                 </div>
             </div>
-            <div class="prodAbajo">
-                <div class="contenedor">
-                    <img class= "burger" src="img/doble-con-panceta.png" alt="doble-con-panceta" id="doblePanceta">
-                    <div class="back"></div>
-                </div>
-                <div class="contenedor">
-                    <img class= "burger" src="img/martins.png" alt="martins" id="martins">
-                    <div class="back"></div>
-                </div>
-                <div class="contenedor">
-                    <img class= "burger" src="img/1706.png" alt="1706" id="H1706">
-                    <div class="back"></div>
-                </div>
-            </div>
-            <div class="btn">
-                <div class="abajo">
-                    <a href="panceta.html" class="doblePanceta" class="abajo">DOBLE CON PANCETA</a>
-                    <a href="martins.html" class="martins" class="abajo">MARTIN'S</a>
-                    <a href="1706.html" class="1706" class="abajo">1706</a>
+            <div class="contenedor">
+                <img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom" id="cheddarBoom">
+                <div class="back">
+                    <h1>cheddar boom</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="cheddarBoom.html">info</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="btn">
+            <div class="arriba">
+                
+                <a href="argenta.html" class="argenta" id="argenta">ARGENTA</a>
+                <a href="betoss.html" class="betoss" id="betoss">BETOS'S</a>
+                <a href="cheddarBoom.html" class="cheddarBoom" id="cheddarBoom">CHEDDAR BOOM</a>
+            </div>
+        </div>
+        <div class="prodAbajo">
+            <div class="contenedor">
+                <img class= "burger" src="img/doble-con-panceta.png" alt="doble-con-panceta" id="doblePanceta">
+                <div class="back" id="doblePanceta">
+                    <h1>doble con panceta</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="panceta.html">info</a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <img class= "burger" src="img/martins.png" alt="martins" id="martins">
+                <div class="back" id="martins">
+                    <h1>martin's</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="martins.html">info</a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <img class= "burger" src="img/1706.png" alt="1706" id="H1706">
+                <div class="back" id="H1706">
+                    <h1>1706</h1>
+                    <h2>$5.000,00</h2>
+                    <a href="1706.html">info</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="abajo">
+                <a href="panceta.html" class="doblePanceta" id="doblePanceta">DOBLE CON PANCETA</a>
+                <a href="martins.html" class="martins" id="martins">MARTIN'S</a>
+                <a href="1706.html" class="1706" id="H1706">1706</a>
+            </div>
+        </div>
 
+    </section>
+    
+    
     <div class="espaciado"></div>
     
     <div class="fin-presentacion"></div>
@@ -82,7 +109,7 @@
         <div class="grupo-1">
             <div class="caja">
                 <a href="#">
-                    <img src="img/logo.png" alt="" class="logo">
+                    <img src="img/logo.png" alt="" class="logo-img">
                 </a>
             </div>
             <div class="caja">

@@ -21,11 +21,81 @@ a{
     color: white;
 }
 
-/*encabezado y barra de navegacion*/
+header{
+    display: flex;
+    min-height: 100px;
+    background-image: url(fondo-header.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    /*position: sticky;  Mantiene el elemento en su posicion original hasta que alcanza un punto especifico en la pagina, en momento en el cual se vuelve fijo. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none; /* Saca el subrallado de los "a" */
+    color: white;
+}
+
+.container-burger1706{
+    display: grid;
+    height: 110px;
+    margin-left: 20px;
+    grid-template-rows: 18% 90%;
+}
+
+.container-burger1706 h2{
+    order: 2;
+    text-align: end;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0;
+}
+
+.container-burger1706 h4{
+    order: 1;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    text-align: end;
+    color: #E9D331;
+}
 
 .logo{
-    position: relative;
-    top: -5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav a{
+    font-weight: 600; /* Negritas */
+    padding-right: 60px;
+}
+
+nav a:hover{
+    color: #E9D331;
+}
+
+.active{
+    color: #E9D331;
+}
+
+/*encabezado y barra de navegacion
+
+.logo{
     width: 140px;
     height: 140px;
     position: relative;
@@ -38,7 +108,7 @@ a{
 
 .barraNavegacion{
     background-image: url("../img/cuadritos.png");
-    /*background-size: cover;*/
+    /*background-size: cover;
     height: 160px;
     width: 100%;
     position: relative;
@@ -70,7 +140,7 @@ a{
     color: #E9D331;
 }
 
-/**************************************************/
+*************************************************/
 
 /*pie de pagina*/
 
