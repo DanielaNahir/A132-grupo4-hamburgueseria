@@ -8,41 +8,84 @@
     font-size: 2.5rem;
 }
 
-.burger{
+.prodArriba{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prodAbajo{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.burger {
+    position: absolute;
     width: 350px;
     height: 310px;
-    margin: 100px 50px;
+    margin: 0px 20px;
     border-radius: 200px;
     border-color: #DF5700;
     border-width: 7px;
-    border-style:solid groove;
+    border-style: solid groove;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
 }
 
-.burger:nth-child(2n-1){
+/* Animacion */
+.back {
+    width: 350px;
+    height: 310px;
+    border-radius: 200px;
+    border-color: #DF5700;
+    background-color: #DF5700;
+    border-width: 7px;
+    border-style: solid groove;
+    margin: 0px 20px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.contenedor:hover img {
+    transform: rotateY(180deg);
+}
+
+.contenedor:hover .back {
+    transform: rotateY(360deg);
+}
+
+/**************/
+
+
+
+#betoss, #doblePanceta, #H1706{
     border-color:  #FF8A00;
+    background-color: #FF8A00;
 }
 .productos{
-    position: absolute;
-    top: 200px;
-    left: 0px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-
+    align-items: center;
 }
 /*************************/
 
 /*botones*/
-.btn{
+.arriba{
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 360px;
-    left: -20px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    top: 10px;
 }
 
-
+.abajo{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 70px;
+}
 
 .btn a{
     color: black;
@@ -53,9 +96,8 @@
     border-radius: 100px;
     border-style: solid groove;
     border-color:#DF5700;
-    margin: 0px 111px 450px;
+    margin: 0px 80px;
     text-align: center;
-    
 }
 
 .btn a:nth-child(2n-1){
@@ -67,14 +109,21 @@
     font-size: 1.5rem;
 }
 
+.espaciado{
+    height: 200px;
+}
 
 /****************************/
 @media screen and (max-width: 1200px) {
     .burger{
         width: 250px;
         height: 210px;
-        margin: 200px 30px;
+        margin: 0px 40px;
         border-radius: 100px;
+    }
+
+    .btn a{
+        margin: 0px 75px;
     }
 
     .navegacion{

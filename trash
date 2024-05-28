@@ -1,0 +1,38 @@
+<div class="front"><img class= "burger" src="img/betoss.jpg" alt="betoss"></div>
+                <div class="back">back</div>
+                <div class="front"><img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom"></div>
+                <div class="back">back</div>
+
+                <div class="contenedor">
+                    <div class="front"><img class= "burger" src="img/betoss.jpg" alt="betoss"></div>
+                    <div class="back">back</div>
+                </div>
+                <div class="contenedor">
+                    <div class="front"><img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom"></div>
+                    <div class="back">back</div>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="arriba">
+                    
+                    <a href="argenta.html" class="argenta" class="arriba">ARGENTA</a>
+                    <a href="betoss.html" class="betoss" class="arriba">BETOS'S</a>
+                    <a href="cheddarBoom.html" class="cheddarBoom" class="arriba">CHEDDAR BOOM</a>
+                </div>
+            </div>
+            <div class="prodAbajo">
+                <div class="argenta">
+                    <img class= "burger" src="img/doble-con-panceta.png" alt="doble-con-panceta">
+                    <div class="back">back</div>
+                </div>
+                <div class="betoss">
+                    <div class="front"><img class= "burger" src="img/betoss.jpg" alt="betoss"></div>
+                    <div class="back">back</div>
+                </div>
+                <div class="cheddarBoom">
+                    <div class="front"><img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom"></div>
+                    <div class="back">back</div>
+                </div>
+                
+                <img class= "burger" src="img/martins.png" alt="martins">
+                <img class= "burger" src="img/1706.png" alt="1706">
