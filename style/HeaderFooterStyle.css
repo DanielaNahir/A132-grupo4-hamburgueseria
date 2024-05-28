@@ -21,6 +21,11 @@ a{
     color: white;
 }
 
+
+.espaciado{
+    height: 150px;
+}
+
 header{
     display: flex;
     min-height: 100px;
@@ -38,11 +43,6 @@ header{
     left: 0;
     width: 100%;
     z-index: 1;
-}
-
-a{
-    text-decoration: none; /* Saca el subrallado de los "a" */
-    color: white;
 }
 
 .container-burger1706{
