@@ -36,3 +36,18 @@
                 
                 <img class= "burger" src="img/martins.png" alt="martins">
                 <img class= "burger" src="img/1706.png" alt="1706">
+
+
+                #btnBurguers a{
+                    position: relative;
+                    top: -540px;
+                    margin-bottom: 280px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+
+                #btnBurguers{
+                    display: grid;
+                    grid-template-columns: repeat(3, auto);
+                    position: absolute;
+                }
