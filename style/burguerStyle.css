@@ -45,7 +45,7 @@
 /*texto*/
 .texto{
     position: relative;
-    width: 35%;
+    width: 37%;
     font-size: 1.2rem;
     top: -300px;
     left: 750px;
@@ -189,7 +189,7 @@ hr{
 
     .texto{
         position: relative;
-        left: 570px;
+        left: 550px;
     }
 
 

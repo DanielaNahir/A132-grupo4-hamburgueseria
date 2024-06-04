@@ -51,3 +51,77 @@
                     grid-template-columns: repeat(3, auto);
                     position: absolute;
                 }
+                <div class="prodArriba">
+                    <div class="contenedor" id="argenta">
+                        <img class= "burger" src="img/argenta.png" alt="argenta" id="argenta">
+                        <div class="back" id="argenta">
+                            <h1>argenta</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="argenta.html">info</a>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <img class= "burger" src="img/betoss.jpg" alt="betoss" id="betoss">
+                        <div class="back" id="betoss">
+                            <h1>betos's</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="betoss.html">info</a>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <img class= "burger" src="img/cheddar-boom.png" alt="cheddar-boom" id="cheddarBoom">
+                        <div class="back">
+                            <h1>cheddar boom</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="cheddarBoom.html">info</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prodAbajo">
+                    <div class="contenedor">
+                        <img class= "burger" src="img/doble-con-panceta.png" alt="doble-con-panceta" id="doblePanceta">
+                        <div class="back" id="doblePanceta">
+                            <h1>doble con panceta</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="panceta.html">info</a>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <img class= "burger" src="img/martins.png" alt="martins" id="martins">
+                        <div class="back" id="martins">
+                            <h1>martin's</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="martins.html">info</a>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <img class= "burger" src="img/1706.png" alt="1706" id="H1706">
+                        <div class="back" id="H1706">
+                            <h1>1706</h1>
+                            <h2>$5.000,00</h2>
+                            <a href="1706.html">info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <div class="abajo">
+                        <a href="panceta.html" class="doblePanceta" id="doblePanceta">DOBLE CON PANCETA</a>
+                        <a href="martins.html" class="martins" id="martins">MARTIN'S</a>
+                        <a href="1706.html" class="1706" id="H1706">1706</a>
+                    </div>
+                </div>
+
+                
+.prodArriba{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.prodAbajo{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}

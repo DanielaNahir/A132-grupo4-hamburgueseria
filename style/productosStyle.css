@@ -8,24 +8,17 @@
     font-size: 2.5rem;
 }
 
-.prodArriba{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.prodAbajo{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 50px;
+.contenedorBurgers{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    height: 1000px;
 }
 
 .burger {
     position: absolute;
     width: 350px;
     height: 310px;
-    margin: 0px 20px;
     border-radius: 200px;
     border-color: #DF5700;
     border-width: 7px;
@@ -44,7 +37,6 @@
     background-color: #DF5700;
     border-width: 7px;
     border-style: solid groove;
-    margin: 0px 20px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s;
@@ -65,6 +57,10 @@
     font-size: 2rem;
 }
 
+.contenedor{
+    margin: 0px 30px 250px;
+}
+
 .contenedor:hover img {
     transform: rotateY(180deg);
 }
@@ -77,22 +73,24 @@
 
 
 /*botones*/
-.arriba{
-    display: flex;
-    justify-content: space-between;
+.btn{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
     position: relative;
-    top: 10px;
 }
 
-.abajo{
-    display: flex;
-    justify-content: space-between;
+#link-argenta, #link-betoss, #link-cheddarBoom{
     position: relative;
-    top: 70px;
+    top: -650px;
+}
+
+#link-doblePanceta, #link-martins, #link-H1706{
+    position: relative;
+    top: -115px;
 }
 
 .btn a{
-    display: block;
     color: black;
     font-size: 2rem;
     background-color:#DF5700;
@@ -101,15 +99,36 @@
     border-radius: 100px;
     border-style: solid groove;
     border-color:#DF5700;
-    margin: 0px 80px;
     text-align: center;
+}
+
+#link-argenta{
+    margin-right: 230px;
+    margin-left: 35px;
+}
+#link-cheddarBoom{
+    margin-left: 230px;
+}
+#link-betoss{
+    margin-left: 30px ;
+}
+
+#link-doblePanceta{
+    margin-left: 10px;
+    
+}
+#link-H1706{
+    margin-left: 260px;
+}
+#link-martins{
+    margin-left: 30px;
 }
 
 .btn a.doblePanceta{
     font-size: 1.5rem;
 }
 
-#betoss, #doblePanceta, #H1706{
+#betoss, #doblePanceta, #H1706, #link-betoss, #link-doblePanceta, #link-H1706{
     border-color:  #FF8A00;
     background-color: #FF8A00;
 }
@@ -124,6 +143,15 @@
         border-radius: 120px;
     }
 
+    .contenedorBurgers{
+        height: 800px;
+    }
+
+    .contenedor{
+        margin: 0px 0px 200px;
+    }
+    
+
     .back{
         width: 290px;
         height: 250px;
@@ -142,66 +170,69 @@
         top: 30px;
     }
 
-    .btn a{
-        margin: 0px 80px;
+    #link-argenta{
+        margin-right: 0px;
+        margin-left: 30px;
     }
-
-    .btn a.doblePanceta{
-        font-size: 1.3rem;
+    #link-cheddarBoom{
+        margin-left: 180px;
     }
-
-    .btn a.cheddarBoom{
-        font-size: 1.6rem;
+    #link-betoss{
+        margin-left: 190px ;
     }
-
-    .navegacion{
-        font-size: 1rem;
+    
+    #link-doblePanceta{
+        margin-left: 0px;
+        
+    }
+    #link-H1706{
+        margin-left: 230px;
+    }
+    #link-martins{
+        margin-left: 180px;
+    }
+    #link-argenta, #link-betoss, #link-cheddarBoom{
+        position: relative;
+        top: -510px;
+    }
+    
+    #link-doblePanceta, #link-martins, #link-H1706{
+        position: relative;
+        top: -90px;
     }
     
 }
 
 @media screen and (max-width: 1100px) {
     .burger{
-        width: 290px;
-        height: 250px;
         margin: 0px 20px;
-        border-radius: 120px;
     }
 
     .back{
-        width: 290px;
-        height: 250px;
         margin: 0px 20px;
-        border-radius: 120px;
     }
 
-    .back h2{
-        position: relative;
-        top: 10px;
-        font-size: 2.5rem;
+    #link-argenta{
+        margin-right: 190px;
+        margin-left: 10px;
     }
-
-    .back a{
-        position: relative;
-        top: 30px;
+    #link-cheddarBoom{
+        margin-left: 140px;
+        margin-right: -20px;
     }
-
-    .btn a{
-        margin: 0px 70px;
-    }
-
-    .btn a.doblePanceta{
-        font-size: 1.3rem;
-    }
-
-    .btn a.cheddarBoom{
-        font-size: 1.6rem;
-    }
-
-    .navegacion{
-        font-size: 1rem;
+    #link-betoss{
+        margin-left: -20px ;
     }
     
+    #link-doblePanceta{
+        margin-left: -20px;
+    }
+    #link-H1706{
+        margin-left: 190px;
+    }
+    #link-martins{
+        margin-left: -30px;
+    }
 }
 
 @media screen and (max-width: 1050px){
@@ -213,28 +244,59 @@
         margin: 0px 10px;
     }
 
-    .back h2{
-        position: relative;
-        top: 10px;
-        font-size: 2.5rem;
+    #link-argenta{
+        margin-right: 170px;
     }
-
-    .back a{
-        position: relative;
-        top: 30px;
+    #link-cheddarBoom{
+        margin-left: 120px;
     }
-
-    .btn a{
-        margin: 0px 60px;
+    #link-betoss{
+        margin-left: -10px ;
     }
-    
+    #link-H1706{
+        margin-left: 170px;
+    }
+    #link-martins{
+        margin-left: -20px;
+    }
 }
 
 @media screen and (max-width: 1000px){
-    a{
-        background-color: #DF5700;
+
+    .contenedorBurgers{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        height: 1100px;
     }
-    
+
+    .btn{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #link-argenta, #link-betoss{
+        position: relative;
+        top: -820px;
+    }
+
+    #link-cheddarBoom, #link-doblePanceta{
+        position: relative;
+        top: -420px;
+    }
+
+    #link-martins, #link-H1706{
+        position: relative;
+        top: -20px;
+    }
+
+    #link-argenta, #link-betoss, #link-doblePanceta, #link-H1706, #link-martins, #link-cheddarBoom{
+        margin: 0px;
+    }
+
+    #link-argenta, #link-cheddarBoom, #link-martins{
+        margin-right: 90px;
+    }
 }
 
 @media screen and (max-width: 600px){
