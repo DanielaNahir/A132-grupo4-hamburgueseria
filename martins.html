@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f4a159c617.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
     <link rel="stylesheet" href="style/burguerStyle.css">
     <link rel="stylesheet" href="style/HeaderFooterStyle.css">
-    <title>Document</title>
+    <title>Martin's</title>
 </head>
 <body>
     <header>
@@ -53,19 +55,12 @@
             <hr>
             <h2 class="subtitulo">otros productos</h2>
             
-            <div class="imagenes">
+            <div class="multiple-items imagenes">
                 <a href="panceta.html"><img src="img/doble-con-panceta.png" alt=""></a>
                 <a href="betoss.html"><img src="img/betoss.jpg" alt=""></a>
                 <a href="cheddarBoom.html"><img src="img/cheddar-boom.png" alt=""></a>
                 <a href="argenta.html"><img src="img/argenta.png" alt=""></a>
                 <a href="1706.html"><img src="img/1706.png" alt=""></a>
-            </div>
-            <div class="btn" id="btnBurguers">
-                <a href="panceta.html" class="doblePanceta" class="abajo">DOBLE CON PANCETA</a>
-                <a href="betoss.html" class="betoss" class="arriba">BETOS'S</a>
-                <a href="cheddarBoom.html" class="cheddarBoom" class="arriba">CHEDDAR BOOM</a>
-                <a href="argenta.html" class="argenta">ARGENTA</a>
-                <a href="1706.html" class="1706" class="abajo">1706</a>
             </div>
         </div>
     </div>
@@ -98,5 +93,14 @@
         </div>
     </footer>
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+    </script>
 </body>
 </html>

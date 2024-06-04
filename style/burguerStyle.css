@@ -96,19 +96,38 @@ hr{
 }
 
 .imagenes img{
-    position: relative;
-    top: -100px;
+    /*position: relative;
+    top: -100px;*/
     width: 240px;
     height: 190px;
     border-radius: 300px;
-    margin: 7px;
+    
 }
 
+/*
 .imagenes{
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: center;
+}*/
+
+
+.multiple-items{
+    width: 80%;
+    position: relative;
+    left: 140px;
+    top: -90px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
+.multiple-items a{
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+
+
 
 #btnBurguers{
     display: grid;
