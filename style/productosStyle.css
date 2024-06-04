@@ -102,7 +102,7 @@
     text-align: center;
 }
 
-#link-argenta{
+#link-argenta, #link-doblePanceta{
     margin-right: 220px;
     margin-left: 40px;
 }
@@ -110,20 +110,14 @@
     margin-left: 200px;
     margin-right: 30px;
 }
-#link-betoss{
-    margin-left: -40px ;
+#link-betoss, #link-martins{
+    margin-left: -40px;
 }
 
-#link-doblePanceta{
-    margin-right: 220px;
-    margin-left: 40px;
-}
 #link-H1706{
     margin-left: 200px;
 }
-#link-martins{
-    margin-left: -40px;
-}
+
 
 .btn a.doblePanceta{
     font-size: 1.5rem;
@@ -171,36 +165,30 @@
         top: 30px;
     }
 
-    #link-argenta{
-        margin-right: 0px;
-        margin-left: 30px;
+    #link-argenta, #link-doblePanceta{
+        margin-right: 200px;
+        margin-left: 55px;
     }
     #link-cheddarBoom{
-        margin-left: 180px;
+        margin-left: 150px;
+        margin-right: 60px;
     }
-    #link-betoss{
-        margin-left: 190px ;
+    #link-betoss, #link-martins{
+        margin-left: -60px;
     }
     
-    #link-doblePanceta{
-        margin-left: 0px;
-        
-    }
     #link-H1706{
-        margin-left: 230px;
-    }
-    #link-martins{
-        margin-left: 180px;
+        margin-left: 140px;
     }
     
     #link-argenta, #link-betoss, #link-cheddarBoom{
         position: relative;
-        top: -510px;
+        top: -520px;
     }
     
     #link-doblePanceta, #link-martins, #link-H1706{
         position: relative;
-        top: -90px;
+        top: -120px;
     }
     
 }
@@ -214,26 +202,19 @@
         margin: 0px 20px;
     }
 
-    #link-argenta{
-        margin-right: 190px;
-        margin-left: 10px;
+    #link-argenta, #link-doblePanceta{
+        margin-right: 110px;
+        margin-left: 50px;
     }
     #link-cheddarBoom{
-        margin-left: 140px;
-        margin-right: -20px;
+        margin-left: 110px;
     }
-    #link-betoss{
-        margin-left: -20px ;
+    #link-betoss, #link-martins{
+        margin-left: 0px;
     }
     
-    #link-doblePanceta{
-        margin-left: -20px;
-    }
     #link-H1706{
-        margin-left: 190px;
-    }
-    #link-martins{
-        margin-left: -30px;
+        margin-left: 110px;
     }
 }
 
@@ -246,20 +227,19 @@
         margin: 0px 10px;
     }
 
-    #link-argenta{
-        margin-right: 170px;
+    #link-argenta, #link-doblePanceta{
+        margin-right: 90px;
+        margin-left: 60px;
     }
     #link-cheddarBoom{
-        margin-left: 120px;
+        margin-left: 90px;
     }
-    #link-betoss{
-        margin-left: -10px ;
+    #link-betoss, #link-martins{
+        margin-left: 0px;
     }
+    
     #link-H1706{
-        margin-left: 170px;
-    }
-    #link-martins{
-        margin-left: -20px;
+        margin-left: 90px;
     }
 }
 
@@ -302,4 +282,47 @@
 }
 
 @media screen and (max-width: 600px){
+    
+    .contenedorBurgers{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        height: 2400px;
+    }
+
+    .btn{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    #link-argenta, #link-betoss, #link-doblePanceta, #link-H1706, #link-martins, #link-cheddarBoom{
+        position: relative;
+        top: 0px;
+        margin: 0px;
+    }
+
+    #link-argenta{
+        position: relative;
+        top: -2120px;
+    }
+    #link-betoss{
+        position: relative;
+        top: -1720px;
+    }
+    #link-cheddarBoom{
+        position: relative;
+        top: -1320px;
+    }
+    #link-doblePanceta{
+        position: relative;
+        top: -920px;
+    }
+    #link-martins{
+        position: relative;
+        top: -520px;
+    }
+    #link-H1706{
+        position: relative;
+        top: -120px;
+    }
 }
