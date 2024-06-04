@@ -96,26 +96,18 @@ hr{
 }
 
 .imagenes img{
-    /*position: relative;
-    top: -100px;*/
     width: 240px;
     height: 190px;
     border-radius: 300px;
     
 }
 
-/*
-.imagenes{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: center;
-}*/
-
+/*carrusel*/
 
 .multiple-items{
     width: 80%;
     position: relative;
-    left: 140px;
+    left: 10%;
     top: -90px;
     display: flex;
     justify-self: center;
@@ -126,25 +118,7 @@ hr{
     margin-right: 0px;
 }
 
-
-
-
-#btnBurguers{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: center;
-}
-
-#btnBurguers a:first-child{
-    font-size: 1.53rem;
-}
-
-#btnBurguers a{
-    position: relative;
-    top: -100px;
-    text-align: center;
-    margin: 10px;
-}
+/***********/
 
 /******************/
 
@@ -175,29 +149,6 @@ hr{
         left: 0px;
     }
 
-    .imagenes{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .imagenes img{
-        margin: 80px 30px;
-    }
-
-    #btnBurguers{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        height: 0px;
-    }
-
-    #btnBurguers a{
-        position: relative;
-        top: -540px;
-        margin-bottom: 280px;
-        margin-left: 30px;
-        margin-right: 30px;
-        
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -252,30 +203,40 @@ hr{
         top: 270px;
     }
     
+    .imagenes img{
+        width: 200px;
+        height: 150px;
+        border-radius: 300px;
+    }
+
+    .multiple-items{
+        top: -250px;
+        height: 500px;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
-
-    .imagenes{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
+    
+    .multiple-items{
+        width: 50%;
+        left: 25%;
     }
 
-    #btnBurguers{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        height: 300px;
+    .multiple-items a{
+        margin-left: 2%;
     }
+    
 
-    #btnBurguers a{
-        position: relative;
-        top: -900px;
-    }
 }
 
 @media screen and (max-width: 700px) {
     .burguer{
         width: 570px;
+    }
+
+    .multiple-items a{
+        margin-left: 1%;
     }
 }
 
@@ -293,12 +254,6 @@ hr{
     .imagenes img{
         margin: 80px 10px;
     }
-
-    #btnBurguers a{
-        margin-left: 10px;
-        margin-right: 10px;
-        
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -309,11 +264,5 @@ hr{
 
     .imagenes img{
         margin: 80px 0px;
-    }
-
-    #btnBurguers a{
-        margin-left: 0px;
-        margin-right: 0px;
-        
     }
 }
