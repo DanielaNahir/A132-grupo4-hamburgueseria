@@ -87,7 +87,7 @@
 
 #link-doblePanceta, #link-martins, #link-H1706{
     position: relative;
-    top: -115px;
+    top: -145px;
 }
 
 .btn a{
@@ -103,25 +103,26 @@
 }
 
 #link-argenta{
-    margin-right: 230px;
-    margin-left: 35px;
+    margin-right: 220px;
+    margin-left: 40px;
 }
 #link-cheddarBoom{
-    margin-left: 230px;
+    margin-left: 200px;
+    margin-right: 30px;
 }
 #link-betoss{
-    margin-left: 30px ;
+    margin-left: -40px ;
 }
 
 #link-doblePanceta{
-    margin-left: 10px;
-    
+    margin-right: 220px;
+    margin-left: 40px;
 }
 #link-H1706{
-    margin-left: 260px;
+    margin-left: 200px;
 }
 #link-martins{
-    margin-left: 30px;
+    margin-left: -40px;
 }
 
 .btn a.doblePanceta{
