@@ -15,7 +15,9 @@
 /**************/
 
 /*titulo*/
-
+.cuerpo{
+    font-family: "Bebas Neue";
+}
 .contenedorTitulo{
     position: relative;
     top: -300px;
@@ -30,6 +32,7 @@
     font-size: 2rem;
     top: 25%;
     left: 40%;
+    
 }
 
 #tituloPanceta{
@@ -76,7 +79,10 @@
 .otrosProductos{
     position: relative;
     top: -100px;
+    font-family: "Bebas Neue";
 }
+
+
 
 .subtitulo{
     position: relative;
