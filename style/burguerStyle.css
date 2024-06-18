@@ -94,7 +94,6 @@
     left: 50px;
     top: -150px;
     font-size: 2rem;
-    background-color: #e47f0d;
 }
 
 hr{
@@ -292,6 +291,20 @@ hr{
 }
 
 @media screen and (max-width: 500px) {
+    .subtitulo{
+        width: 80%;
+    }
+    .burguer{
+        width: 440px;
+        height: 320px;
+    }
+
+    .imagenes img{
+        margin: 80px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .subtitulo{
         width: 80%;
     }
