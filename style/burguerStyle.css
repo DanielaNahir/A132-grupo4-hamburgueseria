@@ -317,3 +317,11 @@ hr{
         margin: 80px 0px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    
+    .burguer{
+        width: 420px;
+        height: 300px;
+    }
+}
