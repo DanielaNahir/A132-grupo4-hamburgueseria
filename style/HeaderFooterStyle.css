@@ -260,8 +260,8 @@ nav a:hover{
     }
 }
 
-/* ############### <!-- Media Query (635px) --> ############### */
-@media screen and (max-width: 635px){
+/* ############### <!-- Media Query (653px) --> ############### */
+@media screen and (max-width: 653px){
     header{
         flex-direction: row;
         justify-content: space-between;
