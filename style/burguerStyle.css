@@ -295,33 +295,11 @@ hr{
         width: 80%;
     }
     .burguer{
-        width: 440px;
-        height: 320px;
-    }
-
-    .imagenes img{
-        margin: 80px 0px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .subtitulo{
-        width: 80%;
-    }
-    .burguer{
-        width: 440px;
-        height: 320px;
-    }
-
-    .imagenes img{
-        margin: 80px 0px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    
-    .burguer{
         width: 420px;
-        height: 300px;
+        height: 320px;
+    }
+
+    .imagenes img{
+        margin: 80px 0px;
     }
 }
