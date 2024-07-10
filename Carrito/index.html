@@ -38,159 +38,22 @@
 
     <main>
         <section class="articulos">
-            <div CLASS = "columnas">
+            <div class="columnas">
                 <p>IMG</p>
                 <p>ARTICULO</p>
                 <p>CANTIDAD</p>
                 <p>PRECIO</p>
                 <p>BORRAR</p>
             </div>
-
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
-            
-            <article class="compraUnidad">
-                <p class="fotoCarrito">
-                    <img class="fotoBeto" src="../img/Beto's.png">
-                </p>
-                <p class="nombreArticulo">Beto's</p>
-                <p class="cantidad">
-                    <input class = "contador" type="number" id="cantidad" value="1" min="1">
-                </p>
-                <p class="precio">$7500</p>
-                <p class="borrar">
-                    <img class="imgTacho" src="../img/eliminar.png">
-                </p>
-            </article>
+            <div id="carrito-container"></div>
         </section>
-
         <aside class="resumenCompra">
             <h1>FINALIZAR COMPRA</h1>
             <ul>
-                <li>SUBTOTAL:</li>
-                <li>ENVIO:</li>
-                <LI>TOTAL:</LI>
+                <li>SUBTOTAL: <b id="precio-subtotal"></b></li>
+                <li>ENVIO: <b id="precio-envio"></b></li>
+                <li>TOTAL: <b id="precio-total"></b></li>
             </ul>
-
             <button>PAGAR</button>
         </aside>
     </main>
@@ -227,5 +90,6 @@
             <small>&copy; 2024 <b>Burger 1706</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>

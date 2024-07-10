@@ -34,6 +34,53 @@ $(document).ready(function() {
         'margin-left': '60px',
         'margin-right': '0px'
     });
+
+    // Añadir estilos de las media queries al elemento .multiple-items
+    function AplicarMediaQueries() {
+        if ($(window).width() <= 1300) {
+            $('.multiple-items').css({
+                'top': '-250px',
+                'height': '500px'
+            });
+        }
+
+        if ($(window).width() <= 1050) {
+            $('.multiple-items').css({
+                'width': '50%',
+                'left': '25%'
+            });
+            $('.multiple-items a').css({
+                'margin-left': '2%'
+            });
+        }
+
+        if ($(window).width() <= 990) {
+            $('.multiple-items').css({
+                'top': '-250px',
+                'height': '500px'
+            });
+        }
+
+        if ($(window).width() <= 850) {
+            $('.multiple-items').css({
+                'width': '50%',
+                'left': '25%'
+            });
+            $('.multiple-items a').css({
+                'margin-left': '2%'
+            });
+        }
+
+        if ($(window).width() <= 720) {
+            $('.multiple-items a').css({
+                'margin-left': '1%'
+            });
+        }
+    }
+
+    // Llamar a AplicarMediaQuerys al cargar y redimensionar la ventana
+    AplicarMediaQueries();
+    $(window).resize(AplicarMediaQueries);
 });
 
 

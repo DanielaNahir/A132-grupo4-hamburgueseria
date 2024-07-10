@@ -60,7 +60,7 @@
 /****************/
 
 /*botones*/
-.btn a{
+.btnCarrito{
     color: black;
     font-size: 2rem;
     background-color: #FF8A00;
@@ -74,8 +74,9 @@
 /*boton carrito*/
 .btnCarrito{
     position: relative;
-    left: 200px;
-    width: 100%;
+    left: 180px;
+    width: 80%;
+    font-family: "Bebas Neue";
 }
 
 /*otros productos*/
@@ -112,7 +113,7 @@ hr{
     
 }
 
-/*carrusel*/
+/*carrusel
 
 .multiple-items{
     width: 80%;
@@ -128,7 +129,7 @@ hr{
     margin-right: 0px;
 }
 
-/***********/
+***********/
 
 /******************/
 
