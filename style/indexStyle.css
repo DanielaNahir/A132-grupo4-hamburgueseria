@@ -460,4 +460,12 @@ span
         height: 80px;
         border: 1px solid black;
     }
+    .titulo-hamburguesa
+    {
+        font-size: 2rem;
+    }
+    .titulo-hamburguesa span
+    {
+        font-size: 0.5rem;
+    }
 }
