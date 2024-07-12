@@ -260,12 +260,12 @@ hr{
 
 @media screen and (max-width: 720px) {
     .contenedorTitulo{
-        .contenedorTitulo{
         position: relative;
         top: -300px;
         left: 15%;
+        background-color: aqua;
     }
-    }
+    
     .burguer{
         width: 570px;
     }
@@ -311,8 +311,7 @@ hr{
         width: 350px;
         height: 290px;
     }
-    .contenedorTitulo{
-        left: 9%;
-
+    .contenedorTitulo img{
+        width: 300px;
     }
 }
