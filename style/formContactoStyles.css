@@ -109,6 +109,49 @@ button {
   font-size: 4rem;
 }
 
+/* ############### <!-- Sucursales --> ############### */
+.sucursal{
+  text-align: center;
+}
+
+.sucursal img{
+  width: 44%;
+  height: auto;
+}
+
+.sucursales {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.ubicaciones, .mapas {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.ubicacion-1, .ubicacion-2, .ubicacion-3, .mapa-1, .mapa-2, .mapa-3 {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.ubicacion-1 h3, .ubicacion-2 h3, .ubicacion-3 h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+.ubicacion-1 p, .ubicacion-2 p, .ubicacion-3 p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.mapa-1 iframe, .mapa-2 iframe, .mapa-3 iframe {
+  width: 80%;
+  height: 300px;
+  border: 2px solid black;
+}
 
 /*                RESPONSIVE                    */
 

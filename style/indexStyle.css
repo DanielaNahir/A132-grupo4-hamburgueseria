@@ -15,9 +15,49 @@ html{
 
 /* ############### <!-- Imagen de fondo --> ############### */
 .fondo{
+    position: relative;
     width: 100%;
     margin-top: 100px;
 }
+
+/*cuandro de texto*/
+span
+{
+    
+    font-weight: bold; 
+    font-family: 'Oswald', sans-serif;
+
+}
+.imagen-fondo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.titulo-hamburguesa
+{
+    font-size: 6rem;
+    color: #E9D331;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 100px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+.titulo-hamburguesa span
+{
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #c7ab94,
+        1px -1px 0 #c7ab94,
+        -1px 1px 0 #c7ab94,
+        1px 1px 0 #c7ab94;
+}
+/**/
 
 .productos{
     display: flex;
@@ -43,7 +83,7 @@ html{
 }
 
 .H-1706, .contenido-1, .H-Betos, .contenido-2{
-    flex: 1; /* Asigna la misma proporción a ambos contenedores */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,7 +94,7 @@ html{
 }
 
 .H-1706, .H-Betos{
-    position: relative; /* Ajusta la posicion en relacion con su posicion orignial */
+    position: relative;
 }
 
 .H-1706 img, .H-Betos img{
@@ -93,7 +133,7 @@ html{
     color: #fff;
 }
 
-.H-1706 a, .H-Betos a{
+.H-1706 a, .H-Betos a, .boton-contenido{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -101,6 +141,17 @@ html{
     padding: 10px;
     border-radius: 40px;
     font-family: "Oswald", sans-serif;
+}
+
+.contenido-1 .boton-contenido
+{
+    margin-top: 80px;
+    background-color: #000;
+}
+.contenido-2 .boton-contenido
+{
+    margin-top: 80px;
+    background-color: #E9D331;
 }
 
 .H-1706 a{
@@ -189,43 +240,28 @@ html{
     height: auto;
 }
 
-/* ############### <!-- Sucursales --> ############### */
-.sucursales{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-}
-
-.ubicaciones, .mapas{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-
-.ubicacion-1, .ubicacion-2, .ubicacion-3, .mapa-1, .mapa-2, .mapa-3{
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-}
-
-.ubicacion-1 h3, .ubicacion-2 h3, .ubicacion-3 h3{
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-}
-
-.ubicacion-1 p, .ubicacion-2 p, .ubicacion-3 p{
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-}
-
-.mapa-1 iframe, .mapa-2 iframe, .mapa-3 iframe{
-    width: 80%;
-    height: 300px;
-    border: 2px solid black;
+@media screen and (max-width: 1100px){
+    .titulo-hamburguesa
+    {
+        font-size: 5rem;
+    }
+    .titulo-hamburguesa span
+    {
+        font-size: 3rem;
+    }
 }
 
 /* ############### <!-- Media Query (768px) --> ############### */
 @media screen and (max-width: 768px){
+    .titulo-hamburguesa
+    {
+        font-size: 4rem;
+    }
+    .titulo-hamburguesa span
+    {
+        font-size: 2rem;
+    }
+
     .hamburguesa-1, .hamburguesa-2{
         flex-direction: row;
     }
@@ -305,6 +341,18 @@ html{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+}
+
+/* ############### <!-- Media Query (600px) --> ############### */
+@media screen and (max-width: 600px){
+    .titulo-hamburguesa
+    {
+        font-size: 3rem;
+    }
+    .titulo-hamburguesa span
+    {
+        font-size: 1.5rem;
     }
 }
 
