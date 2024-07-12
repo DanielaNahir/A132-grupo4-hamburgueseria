@@ -59,6 +59,38 @@ span
 }
 /**/
 
+/*animacion*/
+@keyframes rotateBetos {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate1706 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.H-Betos, .H-1706 {
+    transition: visibility 0s, transform 1s ease; /* Transición para la visibilidad y la transformación */
+}
+
+.H-Betos.show {
+    animation: rotateBetos 2s ease forwards; /* Aplicar la animación de rotación para .H-Betos */
+}
+
+.H-1706.show {
+    animation: rotate1706 2s ease forwards; /* Aplicar la animación de rotación para .H-1706 */
+}
+/***/
+
 .productos{
     display: flex;
     flex-direction: column;
