@@ -309,7 +309,7 @@ hr{
 /* ############### <!-- Media Query (480px) --> ############### */
 @media screen and (max-width: 480px){
     .burguer{
-        width: 390px;
-        height: 320px;
+        width: 350px;
+        height: 290px;
     }
 }
