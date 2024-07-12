@@ -260,7 +260,6 @@ hr{
 
 @media screen and (max-width: 720px) {
     .contenedorTitulo{
-        left: 23%;
         .contenedorTitulo{
         position: relative;
         top: -300px;
@@ -313,6 +312,7 @@ hr{
         height: 290px;
     }
     .contenedorTitulo{
-        width: 90%;
+        left: 9%;
+
     }
 }
