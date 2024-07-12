@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    
 }
 
 #contenedor-login {
@@ -28,7 +28,7 @@
     box-shadow: 0 0 10px rgb(233, 218, 1);
     text-align: center;
     width: 60%;
-    margin-top: 20px;
+    margin-top:20px ;
     /* height: 50%;    */
 }
 
@@ -36,11 +36,13 @@
     letter-spacing: 2.5px;
     color: #E9D331;
     margin-bottom: 35px;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
 }
 
 #contenedor-login label {
     font-size: 1.2em;
     color: #ffffff;
+    font-family: "Oswald", sans-serif;
 }
 
 #contenedor-login input[type="text"],
@@ -92,10 +94,58 @@
     color: #E9D331;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Oswald", sans-serif;
 }
 
 #contenedor-login .registrarse a,#contenedor-login .iniciar-sesion a,#contenedor-login .olvido-contraseña a:hover{
-    text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
+    text-shadow: 0px 0px 20px rgba(255, 255, 0, 0.507);
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #E9D331;
+    padding: 2em;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+#modal-message {
+    font-size: 1.2em;
+    font-family: "Oswald", sans-serif;
+    color: #0e0707;
+    text-shadow: #E9D331;
 }
 
 /* ############### <!-- Media Query (1010px) --> ############### */
@@ -109,7 +159,6 @@
         padding: 10px 0px;
         padding-left: 60px;
     }
-
     #contenedor-login {
         height: auto;
         width: 50%;
@@ -134,8 +183,8 @@
         font-size: 1em;
         margin-bottom: 20px;
     }
+    
 }
-
 /* ############### <!-- Media Query (768px) --> ############### */
 @media screen and (max-width: 768px){
     .logo-img{
@@ -156,7 +205,7 @@
     .container-burger1706 h4{
         font-size: 15px;   
     }
-    
+   
     nav{
         padding: 10px 0px;
         padding-left: 60px;
@@ -170,7 +219,7 @@
         height: 30px;
     }
 
-    
+   
     .caja img{
         width: 100px;
     }
@@ -261,8 +310,7 @@
         text-align: center;
         padding: 4px;
     }
-    
-    
+   
     .fin-presentacion{
         height: 15px;
     }
