@@ -261,7 +261,11 @@ hr{
 @media screen and (max-width: 720px) {
     .contenedorTitulo{
         left: 23%;
-        
+        .contenedorTitulo{
+        position: relative;
+        top: -300px;
+        left: 15%;
+    }
     }
     .burguer{
         width: 570px;
@@ -278,11 +282,7 @@ hr{
         height: 320px;
     }
 
-    .contenedorTitulo{
-        position: relative;
-        top: -300px;
-        left: 15%;
-    }
+    
 
     .imagenes img{
         margin: 80px 10px;
@@ -311,5 +311,8 @@ hr{
     .burguer{
         width: 350px;
         height: 290px;
+    }
+    .contenedorTitulo{
+        width: 90%;
     }
 }
