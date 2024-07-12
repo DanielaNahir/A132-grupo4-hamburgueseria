@@ -138,6 +138,13 @@
     border-color:  #FF8A00;
     background-color: #FF8A00;
 }
+
+#link-betoss:hover, #link-doblePanceta:hover, #link-H1706:hover{
+    background-color: #ec8208;
+}
+.btn a:hover{
+    background-color: #ec6308;
+}
 /****************************/
 
 /*++++++++++++++++++++++++++++++++RESPONSIVE++++++++++++++++++++++++++++++*/

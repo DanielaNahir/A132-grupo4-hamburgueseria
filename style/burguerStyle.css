@@ -79,6 +79,10 @@
     font-family: "Bebas Neue";
 }
 
+.btnCarrito:hover{
+    background-color: #ec8208;
+}
+
 /*otros productos*/
 
 .otrosProductos{
